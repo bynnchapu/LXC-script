@@ -1,4 +1,5 @@
 #!/bin/sh
+cd /var/lib/lxc/
 
 watch=0
 machine=0
@@ -24,6 +25,6 @@ do
         [2-5] ) monitor_type="client";;
         esac
 
-        echo "mount -t aufs -o br:./machine${watch}_${machine}/data/:./${monitor_version}_${monitor_type}/:./centos/rootfs/ none ./machine${watch}_${machine}/rootfs/"
+        mount -t aufs -o "br:./machine${watch}_${machine}/data/:./${monitor_version}_${monitor_type}/:./centos/rootfs/" none "./machine${watch}_${machine}/rootfs/"
     done
 done
