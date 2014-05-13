@@ -24,6 +24,6 @@ do
         [2-5] ) monitor_type="client";;
         esac
 
-        echo "[${watch}][${machine}][${monitor_version}][${monitor_type}]"
+        echo "mount -t aufs -o br:./machine${watch}_${machine}/data/:./${monitor_version}_${monitor_type}/:./centos/rootfs/ none ./machine${watch}_${machine}/rootfs/"
     done
 done
