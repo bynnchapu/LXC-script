@@ -10,7 +10,7 @@ do
         [1-5]  ) monitor_version="zabbix20";;
         6      ) monitor_version="zabbix18";;
         [7-8]  ) monitor_version="zabbix22";;
-        ^9|10  ) monitor_version="nagios3";;
+        9|10  ) monitor_version="nagios3";;
         1[1-2] ) monitor_version="nagios4";;
     esac
 
