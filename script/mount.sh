@@ -7,10 +7,10 @@ do
     watch=`expr $watch + 1`
     monitor_version=""
     case $watch in
-        [1-5] ) monitor_version="Zabbix2.0";;
-        6     ) monitor_version="Zabbix1.8";;
-        [7-8] ) monitor_version="Zabbix2.2";;
-        ^9|10 ) monitor_version="Nagios3";;
+        [1-5]  ) monitor_version="Zabbix2.0";;
+        6      ) monitor_version="Zabbix1.8";;
+        [7-8]  ) monitor_version="Zabbix2.2";;
+        ^9|10  ) monitor_version="Nagios3";;
         1[1-2] ) monitor_version="Nagios4";;
     esac
 
