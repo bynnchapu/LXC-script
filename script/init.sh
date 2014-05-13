@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # TODO: Back to move /var/lib/lxc
-#sudo su -
 mkdir -p test
 cd test/
 
