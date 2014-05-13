@@ -17,6 +17,7 @@ do
     do
         machine=`expr $machine + 1`
         mkdir -p "machine${watch}_${machine}/rootfs"
+        mkdir -p "machine${watch}_${machine}/data"
     done
 done
 
