@@ -16,10 +16,8 @@ do
     while [ $machine -ne 5 ]
     do
         machine=`expr $machine + 1`
-        mkdir -p "machine${watch}_${machine}"
+        mkdir -p "machine${watch}_${machine}/rootfs"
     done
 done
-
-# Create directories for rootfs of containers.
 
 # Copy config file to directories of containers.
