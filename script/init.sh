@@ -1,8 +1,5 @@
 #!/bin/sh
-
-# TODO: Back to move /var/lib/lxc
-mkdir -p test
-cd test/
+cd /var/lib/lxc/
 
 watch=0
 machine=0
