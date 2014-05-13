@@ -1,8 +1,10 @@
 #!/bin/sh
 
 # Become to root, and move lxc directory.
-sudo su -
-cd /var/lib/lxc/
+# TODO: Back to move /var/lib/lxc
+#sudo su -
+mkdir -p test
+cd test/
 
 # Create directories for containers.
 
