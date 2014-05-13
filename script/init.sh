@@ -1,12 +1,10 @@
 #!/bin/sh
 
-# Become to root, and move lxc directory.
 # TODO: Back to move /var/lib/lxc
 #sudo su -
 mkdir -p test
 cd test/
 
-# Create directories for containers.
 watch=0
 machine=0
 while [ $watch -ne 12 ]
@@ -21,4 +19,3 @@ do
     done
 done
 
-# Copy config file to directories of containers.
