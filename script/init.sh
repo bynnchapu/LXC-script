@@ -15,7 +15,6 @@ do
         machine=`expr $machine + 1`
         mkdir -p "machine${watch}_${machine}/rootfs"
         mkdir -p "machine${watch}_${machine}/data"
-        # TODO: Be a function.
         cp "/var/lib/lxc/centos/config" "machine${watch}_${machine}/base_config1"
         sed "8i\\lxc.network.ipv4 = 10.0.3.${watch}${machine}/24\\"              machine${watch}_${machine}/base_config1 > machine${watch}_${machine}/base_config2
         sed "9i\\lxc.network.ipv4.gateway = 10.0.3.1\\"                          machine${watch}_${machine}/base_config2 > machine${watch}_${machine}/base_config3
