@@ -1,7 +1,5 @@
 #!/bin/sh
-#cd /var/lib/lxc/
-mkdir test/
-cd test/
+cd /var/lib/lxc/
 
 watch=0
 machine=0
