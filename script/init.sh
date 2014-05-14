@@ -22,4 +22,3 @@ do
         sed -i "21i\\lxc.cgroup.devices.allow = c 10:237 rwm\\"                     machine${watch}_${machine}/config
     done
 done
-
