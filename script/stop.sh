@@ -30,4 +30,3 @@ else
     # FIXME: Write good message...
     echo "Error!"
 fi
-
