@@ -26,6 +26,6 @@ do
         esac
 
         mount -t aufs \
-            -o br:./machine${watch}_${machine}/data/:./monitoring/${monitor_version}-${monitor_type}/:./centos/rootfs/ none ./machine${watch}_${machine}/rootfs/
+            -o br:machine${watch}_${machine}/data/:monitoring/${monitor_version}-${monitor_type}/:centos/rootfs/ none machine${watch}_${machine}/rootfs/
     done
 done
