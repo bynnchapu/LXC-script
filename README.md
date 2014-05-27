@@ -1,4 +1,4 @@
 LXC-script
 ==========
 
-Script for building test environ on LXC
+Scripts for building and starting test monitoring servers environ on LXC.
