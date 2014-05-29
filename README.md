@@ -1,4 +1,4 @@
-LXC-script
+test-environment-utils
 ==========
 
-Scripts for building and starting test monitoring servers environ on LXC.
+Utils for test monitoring servers environment.
