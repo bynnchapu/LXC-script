@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. ./actual.sh
+. ./expect.sh
 
 TOKEN_1=$(curl -s -X GET -H "Content-Type:application/json-rpc" -d \
 	'{"auth":null,"method":"user.login","id":1,"params":{"user":"admin","password":"zabbix"},"jsonrpc":"2.0"}' \
