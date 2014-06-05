@@ -130,3 +130,40 @@ else
 	echo "Result:NG"
 	echo "${ACTUAL_5_ITEM}"
 fi
+
+echo "\nCheck hosts including assigned template"
+echo "Machine 1"
+ACTUAL_1_HOST=$(curl -s -X GET -H "Content-Type:application/json-rpc" -d \
+	'{"auth":'${TOKEN_1}',"method":"host.get","id":1,"params":{"output":"extend","templateids":"10089"},"jsonrpc":"2.0"}' \
+	http://10.0.3.11/zabbix/api_jsonrpc.php)
+if [ "${ACTUAL_1_HOST}" = "${EXPECT_1_HOST}" ];
+then
+	echo "Result:OK"
+else
+	echo "Result:NG"
+	echo "${ACTUAL_1_HOST}"
+fi
+
+echo "Machine 4"
+ACTUAL_4_HOST=$(curl -s -X GET -H "Content-Type:application/json-rpc" -d \
+	'{"auth":'${TOKEN_4}',"method":"host.get","id":1,"params":{"output":"extend","templateids":"10001"},"jsonrpc":"2.0"}' \
+	http://10.0.3.41/zabbix/api_jsonrpc.php)
+if [ "${ACTUAL_4_HOST}" = "${EXPECT_4_HOST}" ];
+then
+	echo "Result:OK"
+else
+	echo "Result:NG"
+	echo "${ACTUAL_4_HOST}"
+fi
+
+echo "Machine 5"
+ACTUAL_5_HOST=$(curl -s -X GET -H "Content-Type:application/json-rpc" -d \
+	'{"auth":'${TOKEN_5}',"method":"host.get","id":1,"params":{"output":"extend","templateids":"10089"},"jsonrpc":"2.0"}' \
+	http://10.0.3.51/zabbix/api_jsonrpc.php)
+if [ "${ACTUAL_5_HOST}" = "${EXPECT_5_HOST}" ];
+then
+	echo "Result:OK"
+else
+	echo "Result:NG"
+	echo "${ACTUAL_5_HOST}"
+fi
