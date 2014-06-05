@@ -58,7 +58,7 @@ else
 	echo "${ACTUAL_7}"
 fi
 
-echo "\nCheck Trigger and Item"
+echo "\nCheck language of trigger name and item name"
 echo "Machine 1 Trigger"
 ACTUAL_1_TRIGGER=$(curl -s -X GET -H "Content-Type:application/json-rpc" -d \
 	'{"auth":'${TOKEN_1}',"method":"trigger.get","id":1,"params":{"output":"extend","templateids":"10089","triggerids":"13592"},"jsonrpc":"2.0"}' \
