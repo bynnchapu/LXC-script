@@ -28,7 +28,7 @@ We expect following result:
     Machine 7
     Result:OK
     
-    Check Trigger and Item
+    Check language of trigger name and item name
     Machine 1 Trigger
     Result:OK
     Machine 1 Item
@@ -40,4 +40,12 @@ We expect following result:
     Machine 5 Trigger
     Result:OK
     Machine 5 Item
+    Result:OK
+    
+    Check hosts including assigned template
+    Machine 1
+    Result:OK
+    Machine 4
+    Result:OK
+    Machine 5
     Result:OK
